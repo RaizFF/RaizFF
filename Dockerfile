@@ -1,15 +1,11 @@
-FROM python:3.10.8-slim-buster
-
-WORKDIR /VJ-FILTER-BOT
-
-RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends \
-    git \
+FROM python:3.10-slim
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt update && apt upgrade -y \
+    && apt install -y git curl \
     && rm -rf /var/lib/apt/lists/*
-
-COPY requirements.txt .
-RUN pip install --upgrade pip setuptools wheel setuptools_scm \
-    && pip install -r requirements.txt
-
-COPY . .
-
-CMD ["python", "bot.py"]
+WORKDIR /app
+COPY requirements.txt /requirements.txt
+RUN pip install --upgrade pip setuptools wheel \
+    && pip install -r /requirements.txt
+COPY . /app
+CMD ["python3", "bot.py"]
