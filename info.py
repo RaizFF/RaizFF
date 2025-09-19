@@ -41,7 +41,7 @@ auth_channel = environ.get('AUTH_CHANNEL', '') # give your force subscribe chann
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # This Channel Is For When User Request Any File Name With command or hashtag like - /request or #request
-reqst_channel = environ.get('REQST_CHANNEL', '-1003028609757')
+reqst_channel = environ.get('REQST_CHANNEL', '-1002873949576')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 
 # This Channel Is For Index Request 
@@ -196,6 +196,7 @@ else:
 # Don't Remove Credit @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
+
 
 
 
