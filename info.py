@@ -59,7 +59,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rahulyoutubar_db:OuakuqUodiEW2mNA@cluster0.gyjekgr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rahulyoutubar15_db_user:RwCeKuwZPy9cBakq@raizffnewbot.yewajjo.mongodb.net/?retryWrites=true&w=majority&appName=RaizFFNewBot")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
@@ -126,7 +126,7 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'earn4link.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '37e6905cda78e16ad51757112b77084c6ebfd4c1')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/TamilMoviesHD_X/28') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
@@ -197,6 +197,7 @@ else:
 # Don't Remove Credit @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
+
 
 
 
